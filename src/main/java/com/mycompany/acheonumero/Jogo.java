@@ -19,14 +19,21 @@ public class Jogo {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        
+        /** Estanciando os objetos**/
         PrintStream imprimir = System.out;
         Scanner sc = new Scanner(System.in);
         Random geradoDeNumero = new Random();
-
+        
+        //variaveis
         int opcao;
         int escolhadocomputador;
         int escoladojogado = 0;
 
+        
+        /**
+         * Apresentação e condição do usuario se vai interagir ou não;
+         **/
         imprimir.println("qual é o seu nome ? ");
         String nome = sc.next();
         imprimir.println("Muito prazer " + nome);
@@ -34,6 +41,11 @@ public class Jogo {
         imprimir.println("escolha uma das opções para saber se quer jogar ou não\n 1 para sim\n "
                 + "2 para não ");
         imprimir.println("você que jogar comigo");
+        
+        /**
+         * Estrutura condicional para decisão do usuario
+         
+         **/
         while(true){
             
         opcao = sc.nextInt();
